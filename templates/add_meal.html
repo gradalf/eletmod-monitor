@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Új étkezés hozzáadása</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Új étkezés hozzáadása</h1>
+        <form action="/add_meal" method="post">
+            <div class="form-group">
+                <label for="date">Dátum:</label>
+                <input type="date" class="form-control" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="meal_type">Étkezés típusa:</label>
+                <input type="text" class="form-control" id="meal_type" name="meal_type" required>
+            </div>
+            <div class="form-group">
+                <label for="food">Étel:</label>
+                <input type="text" class="form-control" id="food" name="food" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Mennyiség:</label>
+                <input type="number" class="form-control" id="quantity" name="quantity" required>
+            </div>
+            <div class="form-group">
+                <label for="unit">Mértékegység:</label>
+                <input type="text" class="form-control" id="unit" name="unit" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Hozzáadás</button>
+        </form>
+    </div>
+</body>
+</html>

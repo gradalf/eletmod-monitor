@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Új testmozgás hozzáadása</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Új testmozgás hozzáadása</h1>
+        <form action="/add_exercise" method="post">
+            <div class="form-group">
+                <label for="date">Dátum:</label>
+                <input type="date" class="form-control" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="exercise_type">Mozgás típusa:</label>
+                <input type="text" class="form-control" id="exercise_type" name="exercise_type" required>
+            </div>
+            <div class="form-group">
+                <label for="duration">Időtartam (perc):</label>
+                <input type="number" class="form-control" id="duration" name="duration" required>
+            </div>
+            <div class="form-group">
+                <label for="calories">Kalória (opcionális):</label>
+                <input type="number" class="form-control" id="calories" name="calories">
+            </div>
+            <button type="submit" class="btn btn-primary">Hozzáadás</button>
+        </form>
+    </div>
+</body>
+</html>

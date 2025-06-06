@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testmozgások</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Testmozgások</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Dátum</th>
+                    <th>Mozgás típusa</th>
+                    <th>Időtartam (perc)</th>
+                    <th>Kalória</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for exercise in exercises %}
+                <tr>
+                    <td>{{ exercise.date }}</td>
+                    <td>{{ exercise.exercise_type }}</td>
+                    <td>{{ exercise.duration }}</td>
+                    <td>{{ exercise.calories }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
